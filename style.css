@@ -37,7 +37,7 @@
 }
 
 .welcomeBlock__column1{
-    width: 75%;
+    width: 430px;
 }
 
 .welcome-block__title{
@@ -68,6 +68,7 @@
 
 .welcomeBlock__column2{
     position: relative;
+    margin-left: 25%;
 }
 
 .welcome-block__photo::before{
@@ -81,9 +82,68 @@
     top: 13px;
     z-index: -1;
 }
-.posts{
-    height:396px ;
-    width: 100%;
-    background-color: #EDF7FA;
+
+@media (max-width: 600px){
+
+    .wrapper{
+        width: 100%;
+    }
+
+    .header{
+        height: 50px;
+        width: 90%;
+    }
+
+    .menu__item{
+        margin-top:18px;
+        display: block;
+        font-size: 0;
+        height: 2px;
+        width: 10px;
+        background-color: #21243D;
+    }
+
+    .menu__item::before{
+        content: '';
+        display: block;
+        height: 2px;
+        width: 10px;
+        background-color: #21243D;
+        transform: translateY(8px);
+    }
+    .menu__item::after{
+        display: block;
+        content: '';
+        height: 2px;
+        width: 10px;
+        background-color: #21243D;
+        transform: translateY(-10px);
+    }
+    .welcomeBlock{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .welcomeBlock__column2{
+        margin-left: 0;
+        margin-top: 176px;
+        display: flex;
+        justify-content: center;
+        height: 245px;
+        width: 100%;
+
+
+    }
+    .welcome-block__photo{
+        position: absolute;
+    }
+
+    .welcomeBlock__column1{
+        margin: 50px 0 0 10% ;
+        width: 84%;
+        text-align: center;
+
+    }
+
 }
+
 
