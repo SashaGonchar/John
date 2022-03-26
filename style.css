@@ -9,6 +9,21 @@
     flex-direction: row;
 }
 
+.menu2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    background: #EDF7FA;
+    transform: translateY(-100%);
+    transition: transform 0.5s;
+}
+
+.menu2.active {
+    transform: translateY(0);
+}
+
 .menu__burger{
     display: none;
 }
@@ -89,7 +104,6 @@
         width: 375px;
         margin: 0;
         padding: 0;
-
     }
 
     .header{
@@ -102,6 +116,8 @@
     }
 
     .menu__burger{
+        position: relative;
+        z-index:1;
         margin-top:18px;
         display: block;
         height: 2px;
