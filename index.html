@@ -11,9 +11,12 @@
 <body>
 <div class="header">
     <div class="menu">
+        <div class="menu__burger"></div>
         <div class="menu__item">Works</div>
         <div class="menu__item">Blog</div>
         <div class="menu__item">Contact</div>
+        <div class="menu2">
+        </div>
     </div>
 </div>
 <div class="wrapper">
@@ -24,9 +27,17 @@
             <div class="welcome-block__button">Download Resume</div>
         </div>
         <div class="welcomeBlock__column2">
-            <div class="welcome-block__photo"><img src="img/JohnFace.svg" alt="JohnFace"></div>
+            <div class="welcome-block__photo"><img src="img/JohnFace.svg" alt="JohnFace" class="welcome-block__photo2"></div>
         </div>
     </div>
 </div>
 </body>
+<script>
+    let menuBurger = document.querySelector('.menu__burger');
+    let menu2 = document.querySelector('.menu2');
+    menuBurger.addEventListener('click', function() {
+        menuBurger.classList.toggle('active');
+        menu2.classList.toggle('active');
+    })
+</script>
 </html>
