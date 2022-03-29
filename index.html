@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 </style>
@@ -9,15 +10,16 @@
     <title>John</title>
 </head>
 <body>
-<div class="header">
     <div class="menu">
-        <div class="menu__burger"></div>
         <div class="menu__item">Works</div>
         <div class="menu__item">Blog</div>
         <div class="menu__item">Contact</div>
-        <div class="menu2">
-        </div>
     </div>
+<div class="menu__burger"></div>
+<div class="menu2">
+    <div class="menu__item">Works</div>
+    <div class="menu__item">Blog</div>
+    <div class="menu__item">Contact</div>
 </div>
 <div class="wrapper">
     <div class="welcomeBlock">
@@ -32,6 +34,7 @@
     </div>
 </div>
 </body>
+<script src="https://unpkg.com/spacingjs" defer></script>
 <script>
     let menuBurger = document.querySelector('.menu__burger');
     let menu2 = document.querySelector('.menu2');
