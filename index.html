@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 </style>
@@ -10,11 +10,11 @@
     <title>John</title>
 </head>
 <body>
-    <div class="menu">
-        <div class="menu__item">Works</div>
-        <div class="menu__item">Blog</div>
-        <div class="menu__item">Contact</div>
-    </div>
+<div class="menu">
+    <div class="menu__item">Works</div>
+    <div class="menu__item">Blog</div>
+    <div class="menu__item">Contact</div>
+</div>
 <div class="menu__burger"></div>
 <div class="menu2">
     <div class="menu__item">Works</div>
@@ -25,20 +25,35 @@
     <div class="welcomeBlock">
         <div class="welcomeBlock__column1">
             <div class="welcome-block__title">Hi, I am John, Creative Technologist</div>
-            <div class="welcome-block__subtitle" >Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+            <div class="welcome-block__subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </div>
             <div class="welcome-block__button">Download Resume</div>
         </div>
         <div class="welcomeBlock__column2">
-            <div class="welcome-block__photo"><img src="img/JohnFace.svg" alt="JohnFace" class="welcome-block__photo2"></div>
+            <div class="welcome-block__photo"><img alt="JohnFace" class="welcome-block__photo2" src="img/JohnFace.svg">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="news">
+    <div class="wrapper">
+        <div class="news__heading">
+            <div class="news__title">Resent posts</div>
+            <div class="news__view-all">View all</div>
+        </div>
+        <div class="news__posts-block">
+            <div class="news__post"></div>
+            <div class="news__post"></div>
         </div>
     </div>
 </div>
 </body>
-<script src="https://unpkg.com/spacingjs" defer></script>
+<script defer src="https://unpkg.com/spacingjs"></script>
 <script>
     let menuBurger = document.querySelector('.menu__burger');
     let menu2 = document.querySelector('.menu2');
-    menuBurger.addEventListener('click', function() {
+    menuBurger.addEventListener('click', function () {
         menuBurger.classList.toggle('active');
         menu2.classList.toggle('active');
     })
