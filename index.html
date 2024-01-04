@@ -1,36 +1,28 @@
 <!DOCTYPE html>
-<link href="style.css" rel="stylesheet">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
-</style>
 <html lang="en">
+<link href="style.css" rel="stylesheet">
 <head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta charset="UTF-8">
     <title>John</title>
 </head>
 <body>
 <div class="menu">
-    <div class="menu__item">Works</div>
-    <div class="menu__item">Blog</div>
-    <div class="menu__item">Contact</div>
+    <div class="menu__item text-medium">Works</div>
+    <div class="menu__item text-medium">Blog</div>
+    <div class="menu__item text-medium">Contact</div>
 </div>
 <div class="menu__burger"></div>
-<div class="menu2">
-    <div class="menu__item">Works</div>
-    <div class="menu__item">Blog</div>
-    <div class="menu__item">Contact</div>
-</div>
 <div class="wrapper">
-    <div class="welcomeBlock">
-        <div class="welcomeBlock__column1">
-            <div class="welcome-block__title">Hi, I am John, Creative Technologist</div>
+    <div class="welcome-block">
+        <div class="welcome-block__column1">
+            <div class="text-title">Hi, I am John, Creative Technologist</div>
             <div class="welcome-block__subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                 sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
             </div>
-            <div class="welcome-block__button">Download Resume</div>
+            <div class="welcome-block__button text-white">Download Resume</div>
         </div>
-        <div class="welcomeBlock__column2">
+        <div class="welcome-block__column2">
             <div class="welcome-block__photo"><img alt="John Face" class="welcome-block__photo2" src="img/JohnFace.svg">
             </div>
         </div>
@@ -46,7 +38,7 @@
             <div class="news__post">
                 <p class="news__topic">Making a design system from scratch</p>
                 <p class="news__date">12 Feb 2020 | Design, Pattern</p>
-                <p class="news__text">Amet minim mollit non deserunt ullamco est
+                <p class="news__content text">Amet minim mollit non deserunt ullamco est
                     sit aliqua dolor do amet sint. Velit officia
                     consequat duis enim velit mollit. Exercitation
                     veniam consequat sunt nostrud amet.</p>
@@ -54,7 +46,7 @@
             <div class="news__post">
                 <p class="news__topic">Creating pixel perfect icons in Figma</p>
                 <p class="news__date">12 Feb 2020 | Figma, Icon Design</p>
-                <p class="news__text">Amet minim mollit non deserunt ullamco est
+                <p class="news__content text">Amet minim mollit non deserunt ullamco est
                     sit aliqua dolor do amet sint. Velit officia
                     consequat duis enim velit mollit. Exercitation
                     veniam consequat sunt nostrud amet.</p>
@@ -73,7 +65,7 @@
                     <p class="works__year">2020</p>
                     <p class="works__theme">Dashboard</p>
                 </div>
-                <p class="works__text">Amet minim mollit non deserunt
+                <p class="works__content text">Amet minim mollit non deserunt
                     ullamco est sit aliqua dolor do amet sint. Velit
                     officia consequat duis enim velit mollit. Exercitation
                     veniam consequat sunt nostrud amet.</p>
@@ -87,7 +79,7 @@
                     <p class="works__year">2018</p>
                     <p class="works__theme">Illustration</p>
                 </div>
-                <p class="works__text">Amet minim mollit non deserunt
+                <p class="works__content text">Amet minim mollit non deserunt
                     ullamco est sit aliqua dolor do amet sint. Velit
                     officia consequat duis enim velit mollit. Exercitation
                     veniam consequat sunt nostrud amet.</p>
@@ -101,7 +93,7 @@
                     <p class="works__year">2018</p>
                     <p class="works__theme">Typography</p>
                 </div>
-                <p class="works__text">Amet minim mollit non deserunt
+                <p class="works__content text">Amet minim mollit non deserunt
                     ullamco est sit aliqua dolor do amet sint. Velit
                     officia consequat duis enim velit mollit. Exercitation
                     veniam consequat sunt nostrud amet.</p>
@@ -110,10 +102,13 @@
     </div>
 </div>
 <div class="footer">
-    <img alt="FaceBook" class="footer__social-media" src="img/fb.png">
-    <img alt="Instagram" class="footer__social-media" src="img/insta.png">
-    <img alt="Twitter" class="footer__social-media" src="img/twitter.png">
-    <img alt="Linkedin" class="footer__social-media" src="img/Linkedin.png">
+    <div class="footer-wrapper">
+    <img alt="FaceBook" class="footer__social-media" src="img/fb.svg">
+    <img alt="Instagram" class="footer__social-media" src="img/insta.svg">
+    <img alt="Twitter" class="footer__social-media" src="img/x.svg">
+    <img alt="Linkedin" class="footer__social-media" src="img/linkedin.svg">
+    </div>
+    <p class="footer-copyright">Copyright ©2020 All rights reserved</p>
 </div>
 </body>
 <script>
